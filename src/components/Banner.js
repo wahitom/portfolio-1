@@ -58,7 +58,15 @@ export const Banner = () => {
               <span className="wrap"> {text} </span>
             </h1>
             {/* Talk about yourself here */}
-            <p>This is a placeholder text</p>
+            <p>
+              THey there! Welcome to my corner of the internet! I'm Miriam, a
+              passionate developer with a knack for turning ideas into digital
+              reality. Whether it's crafting sleek websites, developing
+              intuitive apps, or diving into the depths of code, I thrive on
+              bringing creativity and functionality together. With a blend of
+              innovation and attention to detail, I'm here to showcase my
+              journey through the ever-evolving world of technology.
+            </p>
             <button onClick={() => console.log("connect")}>
               Let's connect
               <ArrowRightCircle size={25} />

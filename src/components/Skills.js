@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp2 .png";
+import colorSharp from "../assets/img/color-sharp2.png";
 
 export const Skills = () => {
   const responsive = {
@@ -29,56 +29,126 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="skill" id="skills" style={{ paddingBottom: "40px" }}>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-lg-6 col-md-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
+              <h2>Front-end Development</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
+                Front-end development allows me to merge creativity with
+                technology, crafting sleek and intuitive user interfaces. These
+                are the languages i speak in
               </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
+              <div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
                   <h5>Javascript</h5>
                 </div>
+
                 <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Python</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Image" />
                   <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <h5>HTML/CSS</h5>
+                </div>
+              </div>
+              <div className="skill-bx wow zoomIn">
+                <p>
+                  Resources I've used so far in my projects for the front-end;
+                </p>
+
+                <div className="item">
+                  <h5>Github</h5>
+                </div>
+                <div className="item">
+                  <h5>VsCode</h5>
+                </div>
+                <div className="item">
+                  <h5>Netlify</h5>
+                </div>
+                <div className="item">
+                  <h5>Vercel</h5>
+                </div>
+                <div className="item">
+                  <h5>Render</h5>
+                  <div className="item">
+                    <h5>Bootstrap</h5>
+                  </div>
+                  <div className="item">
+                    <h5>Tailwind Css</h5>
+                  </div>
+                  <div className="item">
+                    <h5>Chakra ui</h5>
+                  </div>
+                  <div className="item">
+                    <h5>Material Ui</h5>
+                  </div>
+                  <div className="item">
+                    <h5>Figma</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-12">
+            <div
+              className="skill-bx wow zoomIn"
+              style={{ paddingBottom: "95px" }}
+            >
+              <h2>Backend-Development</h2>
+              <p>
+                I appreciate backend development for its intricate
+                problem-solving nature and the satisfaction of optimizing
+                server-side operations for efficiency. These are the languages i
+                speak in;
+              </p>
+              <div>
+                <div className="item">
+                  <h5>Python</h5>
+                </div>
+
+                <div className="item">
                   <h5>Flask</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
                   <h5>MySQL</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
                   <h5>SQLite</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
                   <h5>PostgreSQL</h5>
                 </div>
-              </Carousel>
+                <div className="skill-bx wow zoomIn">
+                  <p>
+                    Resources I've used so far in my projects for the back-end;
+                  </p>
+
+                  <div className="item">
+                    <h5>Github</h5>
+                  </div>
+                  <div className="item">
+                    <h5>VsCode</h5>
+                  </div>
+                  <div className="item">
+                    <h5>Postman</h5>
+                  </div>
+
+                  <div className="item">
+                    <h5>Render</h5>
+                  </div>
+                  <div className="item">
+                    <h5>PostgreSQL</h5>
+                  </div>
+                  <div className="item">
+                    <h5>MySQL</h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   );
 };
