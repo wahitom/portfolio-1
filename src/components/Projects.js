@@ -21,6 +21,12 @@ export const Projects = () => {
       imgUrl: projImg2,
       websiteUrl: "https://couch-potato-kappa.vercel.app/",
     },
+    {
+      title: "Trip-tango",
+      description: "Leisure and Travel",
+      imgUrl: projImg3,
+      websiteUrl: "https://github.com/wahitom/phase-2-tour-project",
+    },
   ];
 
   return (

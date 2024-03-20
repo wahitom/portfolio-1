@@ -79,10 +79,16 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#" className="text-white hover:text-gray-400">
+                <a
+                  href="https://www.linkedin.com/in/miriam-maina-962693167/"
+                  className="text-white hover:text-gray-400"
+                >
                   <i className="fab fa-linkedin fa-lg"></i>
                 </a>
-                <a href="#" className="text-white hover:text-gray-400">
+                <a
+                  href="https://github.com/wahitom"
+                  className="text-white hover:text-gray-400"
+                >
                   <i className="fab fa-whatsapp fa-lg"></i>
                 </a>
 

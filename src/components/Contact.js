@@ -5,6 +5,21 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
+  const openEmail = () => {
+    window.location.href = "mailto:miriammaina51@gmail.com";
+  };
+
+  const openGithub = () => {
+    window.open("https://github.com/wahitom", "_blank");
+  };
+
+  const openLinkedin = () => {
+    window.open(
+      "https://www.linkedin.com/in/miriam-maina-962693167/",
+      "_blank"
+    );
+  };
+
   return (
     <section className="contact" id="connect">
       <Container>
@@ -34,13 +49,17 @@ export const Contact = () => {
 
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <button className="new-email-bx">Email me</button>
+                      <button className="contact-btn" onClick={openEmail}>
+                        Email me
+                      </button>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <button className="new-email-bx">View my github</button>
+                      <button className="contact-btn" onClick={openGithub}>
+                        View my github
+                      </button>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <button className="new-email-bx">
+                      <button className="contact-btn" onClick={openLinkedin}>
                         Reach out on Linkedin
                       </button>
                     </Col>

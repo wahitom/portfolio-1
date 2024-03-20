@@ -73,7 +73,7 @@ body {
   position: relative;
   background-color: #000000 !important;
   color: #fff !important;
-  font-family: "Centra", sans-serif !important;
+  font-family: "Lora", sans-serif !important;
 }
 
 h1,
@@ -163,8 +163,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 /* logo */
 .logo {
-  height: 10vh;
-  width: 20vh;
+  height: 35px;
+  width: 30vh;
 }
 
 span.navbar-text {
@@ -292,7 +292,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 200px 0 100px 0;
   background-image: url("./assets/img/Blue\ nebula.jpeg");
   background-color: black !important;
   background-position: top center;
@@ -310,11 +310,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   );
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -331,7 +331,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button {
   color: #fff;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 60px;
   letter-spacing: 0.8px;
   display: flex;
@@ -366,7 +366,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 0 100px 0;
   position: relative;
 }
 .skill-bx {
@@ -374,8 +374,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 .skill h2 {
   font-size: 45px;
@@ -384,9 +384,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill p {
   color: #b8b8b8;
   font-size: 20px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 30px 0 50px 0;
+  letter-spacing: 0px;
+  line-height: 2em;
+  margin: 0px 0 30px 0;
 }
 .skill-slider {
   width: 80%;
@@ -409,7 +409,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: rgb(12, 28, 66);
+  background-color: #0c1c42;
   margin-bottom: 100px;
 }
 .project h2 {
@@ -611,11 +611,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  /* padding: 0 0 50px 0;
   background-image: url("./assets/img/footer-bg.png");
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+
+  padding: 0 0 100px 0;
+  background: linear-gradient(90.21deg, #19a5dd -5.91%, #022355 111.58%);
 }
 .newsletter-bx {
   background: #ffffff;
@@ -686,4 +689,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+/******  Contact section buttons ******/
+
+.contact-btn {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 18px 34px;
+  margin-left: 18px;
+  position: relative;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Added color and border-color to the transition */
+  margin: 15px;
+}
+
+.contact-btn::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: width 0.3s ease-in-out; /* Changed the transition property to only affect width */
+}
+
+.contact-btn:hover {
+  color: #121212;
+  border-color: #121212; /* Change border color on hover */
+}
+
+.contact-btn:hover::before {
+  width: 100%; /* Expand the ::before element width on hover */
 }

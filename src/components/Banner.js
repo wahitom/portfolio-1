@@ -8,7 +8,7 @@ import { Prev } from "react-bootstrap/esm/PageItem";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Software Engineer.", "Web Developer."];
+  const toRotate = ["Software Developer.", "Web Developer."];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -59,7 +59,7 @@ export const Banner = () => {
             </h1>
             {/* Talk about yourself here */}
             <p>
-              THey there! Welcome to my corner of the internet! I'm Miriam, a
+              Hey there! Welcome to my corner of the internet! I'm Miriam, a
               passionate developer with a knack for turning ideas into digital
               reality. Whether it's crafting sleek websites, developing
               intuitive apps, or diving into the depths of code, I thrive on
